@@ -1,0 +1,174 @@
+/* ------------------------------------------------------------ */
+/* imports and utilities */
+
+/* 3rd-party CSS files */
+@import 'vendor/h5bp-head.css';
+@import 'vendor/normalize.css';
+@import 'vendor/h5bp-tail.css';
+
+/* use a more intuitive box sizing model (http://is.gd/wNVjAo) */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Scale down images and embedded videos so they don't overflow their parents */
+img, object { max-width: 100%; }
+
+/*	Development/layout aid. Remove the comments
+	on this rule in order to draw boxes around DIVs
+	and other elements used for layout. */
+/* 
+div, main, article, section, aside, hgroup, header, footer, address, nav {
+	border: 1px solid rgba(255,0,0,0.15) !important;
+	background: rgba(255,0,0,0.05) !important;		
+}
+*/
+
+
+/* ------------------------------------------------------------ */
+/* start project-specifc styles below this line */
+
+body {
+	font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+	color: #333;
+}
+
+.container {
+	padding: 1em;
+}
+
+
+/* --------------------------------------------- */
+/* typography */
+
+h3 {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+i {
+	font-style: normal;
+}
+
+a {
+	color: #004057;
+	text-decoration: none;
+}
+a:hover {
+	background-color: #A2DDF2;
+}
+a:visited {
+	color: #004057;
+}
+
+
+/* --------------------------------------------- */
+/* font samples on front page */
+
+.minisample-list__bd {
+	list-style-type: none;
+	padding: 0;
+}
+
+.minisample-list__bd > li {
+	margin: 0 0 2rem 0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+/*	grid-gap: 0.125em;*/
+/*	background-color: #E6EBED;*/
+	background-color: #F0F5F7;
+	border: 1px solid #E6EBED;
+	border-top: none;
+	border-left: none;
+}
+
+.minisample h3,
+.minisample p {
+	margin: 0;
+/*	color: #4B6169;*/
+}
+
+.minisample__title {
+	grid-column: 1 / 3;
+	padding: 0.5rem 0.5rem 0.5rem 1.25rem;
+	background-color: #DFE9ED;
+	border-right: 1px solid #F0F5F7;
+}
+
+.minisample__attribution {
+	grid-column: 3 / 4;
+	background-color: #DFE9ED;
+	border-right: 1px solid #F0F5F7;
+}
+.minisample__attribution a {
+	display: block;
+	padding: 0.5rem 0.5rem 0.5rem 1.25rem;
+}
+
+.minisample__gf {
+	grid-column: 4 / 5;
+	background-color: #DFE9ED;
+}
+.minisample__gf a {
+	display: block;
+	padding: 0.5rem 0.5rem 0.5rem 1.25rem;
+}
+
+.minisample__large {
+	grid-column: 1 / -1;
+	padding: 1.5rem 1rem 1rem 1.25rem;
+	border-bottom: 1px solid #E6EBED;
+}
+.minisample__large p {
+	margin: 0;
+	font-size: 3rem;
+	line-height: 1em;
+	color: #111;
+}
+.minisample__large i {
+	font-size: 1.5rem;
+}
+
+.minisample__alphabet {
+	grid-column: 1 / 3;
+	padding: 1.25rem 2rem 2rem 1.25rem;
+	border-right: 1px solid #E6EBED;
+}
+.minisample__alphabet p {
+	margin: 0;
+	font-size: 1.5rem;
+	line-height: 1.25em;
+	color: #111;
+}
+
+.minisample__text {
+	grid-column: 3 / -1;
+	padding: 1.25rem 2rem 2rem 1.25rem;
+}
+.minisample__text p {
+	margin: 0;
+	font-size: 1.25rem;
+	line-height: 1.5em;
+	color: #111;
+}
+
+
+/* ------------------------------------------------------------ */
+/* media query containing styles for larger screens */
+@media (min-width: 720px) {
+	
+	/* container on larger screens */
+	.container {
+		width: 90%;
+		max-width: 1200px;
+		margin: 2em;
+		margin-right: auto;
+		margin-left: auto;
+		padding: 2em;
+	}
+
+} /* end media query */

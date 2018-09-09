@@ -1,0 +1,16 @@
+
+- slug: barlow
+  title: 'Barlow'
+  site: 'https://tribby.com/fonts/barlow/'
+  attribution: 'Jeremy Tribby'
+  css-name: 'Barlow'
+  import: '<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">'
+  gf: 'https://fonts.google.com/specimen/Barlow?selection.family=Barlow'
+
+- slug: cormorant-garamond
+  title: 'Cormorant Garamond'
+  site: 'https://www.behance.net/gallery/28579883/Cormorant-an-open-source-display-font-family'
+  attribution: 'Catharsis Fonts'
+  css-name: 'Cormorant Garamond'
+  import: '<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">'
+  gf: 'https://fonts.google.com/specimen/Cormorant+Garamond'

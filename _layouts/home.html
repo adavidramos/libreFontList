@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Title goes here</title>
+	<meta name="description" content="">
+	
+	<!-- Enable responsive layouts; tell browsers not to shrink pages to fit small screens -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Load styles -->
+	<!-- For production, combine all of the stylesheets -->
+	<link rel="stylesheet" href="css/sitewide.css">
+	
+	<!-- Webfonts -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+    <!-- Fonts for samples -->
+    {% for font in site.data.fonts %}
+        {{ font.import }}
+    {% endfor %}
+
+
+</head>
+<body class="homepage">
+<!-- Change this classname for each page/type! -->
+
+	<!-- Page content typically goes inside the container -->
+	<div class="container">
+
+
+
+        <section class="minisample-list">
+            <ul class="minisample-list__bd">
+                
+            {% for font in site.data.fonts %}
+
+                <li class="minisample">
+                    <div class="minisample__title">
+                        <h3>{{ font.title }}</h3>
+                    </div>
+                    <div class="minisample__attribution">
+                        {% if font.attribution %}
+                            <p><a href="{{ font.site }}">{{ font.attribution }}</a></p>
+                        {% endif %}
+                    </div>
+                    <div class="minisample__gf">
+                        {% if font.gf %}
+                            <p><a href="{{ font.gf }}">Google Fonts</a>
+                        {% endif %}
+                    </div>
+                    <div class="minisample__large">
+                        <p style="font-family: {{ font.css-name }};">
+                            We are designing verbs, not nouns. <i>(<em>Bill Moggridge</em>)</i>
+                        </p>
+                    </div>
+                    <div class="minisample__alphabet">
+                        <p style="font-family: {{ font.css-name }};">
+                            A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+                            a b c d e f g h i j k l m n o p q r s t u v w x y z 
+                            0 1 2 3 4 5 6 7 8 9 
+                            . , ! ? : ; * [ ] ( ) { } + / & # @ %
+                            " " ' ' &lsquo; &rsquo; &ldquo; &rdquo;
+                            Ñ Ø Ü Ç Á È Å ñ ø ü ç á è å
+                        </p>
+                    </div>
+                    <div class="minisample__text">
+                        <p style="font-family: {{ font.css-name }};">
+                            &ldquo;As long as I live under the capitalistic system, I expect to have my life influenced by the demands of moneyed people. But I will be damned if I propose to be at the beck and call of every itinerant scoundrel who has two cents to invest in a postage stamp.&rdquo; (<em>William Faulkner, resigning his position as a  postmaster.</em>)
+                        </p>
+                    </div>
+                </li>
+
+            {% endfor %}
+
+            </ul>
+        </section>
+
+
+
+
+	</div><!-- end container -->
+	
+</body>
+</html>
