@@ -64,6 +64,15 @@ a:visited {
 	color: #004057;
 }
 
+.buttonlike {
+	padding: 0.25em 0.5em;
+	background: #DFE9ED;
+	border: 1px solid #E6EBED;
+	border-radius: 5px;
+}
+.buttonlike:hover {
+	background-color: #A2DDF2;
+}
 
 /* --------------------------------------------- */
 /* font samples on front page */
@@ -86,23 +95,23 @@ a:visited {
 	border-left: none;
 }
 
-.minisample h3,
-.minisample p {
-	margin: 0;
-/*	color: #4B6169;*/
-}
-
 .minisample__title {
 	grid-column: 1 / 3;
 	padding: 0.5rem 0.5rem 0.5rem 1.25rem;
 	background-color: #DFE9ED;
 	border-right: 1px solid #F0F5F7;
 }
+.minisample__title h3 {
+	margin: 0;
+}
 
 .minisample__attribution {
-	grid-column: 3 / 4;
+	grid-column: 3 / 5;
 	background-color: #DFE9ED;
 	border-right: 1px solid #F0F5F7;
+}
+.minisample__attribution p {
+	margin: 0;	
 }
 .minisample__attribution a {
 	display: block;
@@ -126,23 +135,33 @@ a:visited {
 .minisample__large p {
 	margin: 0;
 	font-size: 3rem;
-	line-height: 1em;
+	line-height: 1.25em;
 	color: #111;
 }
 .minisample__large i {
 	font-size: 1.5rem;
 }
 
-.minisample__alphabet {
+.minisample__detail {
 	grid-column: 1 / 3;
 	padding: 1.25rem 2rem 2rem 1.25rem;
 	border-right: 1px solid #E6EBED;
 }
-.minisample__alphabet p {
+.minisample__alphabet {
 	margin: 0;
 	font-size: 1.5rem;
 	line-height: 1.25em;
 	color: #111;
+}
+.minisample__links {
+	font-size: 1rem;
+	margin: 2em 0 1em 0;
+	padding: 0;
+	list-style-type: none;
+}
+.minisample__links li {
+	margin: 0 0.5em 0 0;
+	display: inline;
 }
 
 .minisample__text {

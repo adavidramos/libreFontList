@@ -14,3 +14,13 @@
   css-name: 'Cormorant Garamond'
   import: '<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">'
   gf: 'https://fonts.google.com/specimen/Cormorant+Garamond'
+  
+- slug: fira
+  title: 'Fira'
+  site: 'http://mozilla.github.io/Fira/'
+  attribution: 'Mozilla'
+  css-name: 'Fira Sans'
+  import: '<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">'
+  gf: 'https://fonts.google.com/specimen/Fira+Sans'
+  
+  
